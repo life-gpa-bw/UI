@@ -75,29 +75,39 @@ nav {
      height: 100%;                                                   
      position: sticky;                                              
                                                                     
-      @media @mobile {position: relative; flex-direction: row; width: 90%;};
+      @media @mobile {position: relative; flex-direction: column; width: 90%;};
                                                                    
 }                                                                 
                                                                  
                                                                                               
 .nav-btn {                                                      
-  color: yellow;                                               
-  @media @mobile {display: none};                             
+  color: yellow;                                                
+  @media @mobile {display: none};                              
 }                                                             
                                                                
                                                                
 .logo {                                                        
+                                                              
+    padding: 2px;                                             
+    width: 149px;                                             
+    height: 120px;                                            
+    background-color: #000000;                                        
+    @media @mobile{padding: 7rem;margin-left:1rem;width:135px;};     
+                                                                     
+                                                                     
+                                                                     
+}                                                                   
+.welcome {                                                          
+  margin: 3rem;                                                    
+  padding-left: 13rem;                                            
+  font-size: 48px;                                               
+  @media @mobile{display: none}
+  @media @break1{display: none};
+}                                                               
+    
+a {
+  text-decoration: none;
+}
+                                                              
+                                                             
                                                             
-    padding: 2px;                                   
-    width: 149px;                                   
-    height: 120px;                                
-    background-color: #000000;                   
-    @media @mobile{padding: 7rem;margin-left:1rem;width:135px;};  
-                                               
-                                               
-                                              
-}                                             
-                                              
-                                              
-                                         
-                                        
