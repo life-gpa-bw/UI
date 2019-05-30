@@ -1,0 +1,257 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  text-align: center;
+}
+@media (max-width:600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+}
+p {
+  text-align: center;
+}
+section {
+  padding: 1rem;
+  margin: 1rem;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  max-width: 96%;
+  flex-direction: column;
+  padding-top: 1rem;
+  align-content: center;
+}
+.content {
+  border: 3px solid black;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 24px;
+}
+@media (max-width:600px) {
+  .content {
+    max-width: 90%;
+  }
+}
+.headline {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button-container {
+  background-color: black;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+.about-btn,
+.login-btn {
+  padding: 1rem;
+}
+.about-btn button,
+.login-btn button {
+  border: 3px solid yellow;
+  background: black;
+  color: yellow;
+  border-radius: 8px;
+  width: 20rem;
+  height: 3rem;
+}
+button:hover {
+  opacity: 0.5;
+}
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.dropdown .nav-btn {
+  margin: 10px;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: #ffeb38;
+  background: black;
+}
+.dropdown .nav-btn:hover {
+  margin: 8px;
+  width: 52px;
+  height: 52px;
+  color: #ffeb38;
+}
+.dropdown .links {
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  margin: 17px;
+  position: absolute;
+  z-index: 10;
+  top: 70px;
+  right: 0;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffeb38;
+}
+.dropdown .link {
+  width: 268px;
+  height: 47px;
+  margin: 2px auto;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  font-size: 1.8rem;
+  font-weight: 550;
+  color: #ffeb38;
+  cursor: pointer;
+}
+.dropdown .link:hover {
+  width: 270px;
+  height: 49px;
+}
+.dropdown .dropdown-selected {
+  display: flex;
+  background-color: #000000;
+  color: #ffeb38;
+  opacity: 50;
+}
+nav {
+  color: #ffeb38;
+  background-color: #000000;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: sticky;
+}
+@media (max-width:600px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+.nav-btn {
+  color: yellow;
+}
+@media (max-width:600px) {
+  .nav-btn {
+    display: none;
+  }
+}
+.logo {
+  padding: 2px;
+  width: 149px;
+  height: 120px;
+  background-color: #000000;
+}
+@media (max-width:600px) {
+  .logo {
+    padding: 7rem;
+    margin-left: 1rem;
+    width: 135px;
+  }
+}
+.welcome {
+  margin: 3rem;
+  padding-left: 13rem;
+  font-size: 48px;
+}
+@media (max-width:600px) {
+  .welcome {
+    display: none;
+  }
+}
+@media (max-width:950px) {
+  .welcome {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: black;
+  color: yellow;
+  text-align: center;
+}
+@media (max-width:600px) {
+  footer {
+    position: static;
+  }
+}
+body {
+  max-width: 100%;
+}
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs .tabs-item {
+  display: none;
+  margin-top: 3rem;
+  width: 100%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: block;
+  background-color: black;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: yellow;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  background-color: white;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: yellow;
+}
