@@ -1,0 +1,9 @@
+import React from 'react';
+import {render} from 'react-dom';
+import babel from 'babel';
+
+const NavBtn = React.Component();
+constructor(props) ;
+this.NavBtn=props.NavBtn;
+return props;
+export default NavBtn
